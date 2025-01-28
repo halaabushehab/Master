@@ -691,6 +691,9 @@
   border: 3px solid #ddd; /* إطار حول الصورة */
   border-radius: 8px;
   transition: transform 0.3s ease;
+    max-height: 300px; /* يمكنك تعديل الارتفاع حسب الحاجة */
+    object-fit: cover; /* للحفاظ على نسبة الصورة */
+
 }
 
 .blog_item_img img:hover {

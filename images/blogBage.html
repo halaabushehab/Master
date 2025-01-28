@@ -33,6 +33,7 @@
 
 
 
+
 <!--================================================================================== *****navbar ****==============================================* -->
 <header class="header_area" id="header">
 	<div class="container-fluid h-100">
@@ -48,27 +49,26 @@
 								<a class="nav-link" href="index.html">الصفحة الرئيسية <span class="sr-only"></span></a>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#destination.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الفئات <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								<a class="nav-link dropdown-toggle" href="#destination.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">المدن <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="index.html">عمان </a>
-									<a class="dropdown-item" href="explore.html">الزرقاء</a>
-									<a class="dropdown-item" href="listing.html"> اربد</a>
-									<a class="dropdown-item" href="single-listing.html"> السلط</a>
-									<a class="dropdown-item" href="contact.html"> عجلون</a>
+									<a class="dropdown-item" href="places\destination.html">عمان </a>
+									<a class="dropdown-item" href="places\destination - Z.html">الزرقاء</a>
+									<a class="dropdown-item" href="places\destination - I.html"> اربد</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown" style="margin-left: 10px;">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">المدونة <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <a class="nav-link dropdown-toggle" href="blog\blogBage.html" id="navbarDropdown2"   aria-haspopup="true" aria-expanded="false">المدونة <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								<!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">المدونة <i class="fa fa-angle-down" aria-hidden="true"></i></a> -->
+								<!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
 									<a class="dropdown-item" href="index.html">أماكن عائلية ممتعة </a>
 									<a class="dropdown-item" href="explore.html"> أجمل المواقع التراثية في الأردن</a>
 									<a class="dropdown-item" href="listing.html"> مطاعم ومقاهي لا تفوّت تجربتها </a>
 									<a class="dropdown-item" href="single-listing.html">كيف تختار وجهتك بناءً على الموسم؟ </a>
 									<a class="dropdown-item" href="contact.html"> قصص وتجارب زوار الموقع</a>
-								</div>
+								</div> -->
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="contact.html">تواصل معنا</a>
+								<a class="nav-link" href="contact\contactUs.html">تواصل معنا</a>
 							</li>
 						</ul>
 						<!-- Search btn -->
@@ -76,8 +76,9 @@
 							<a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i> البحث</a>
 						</div>
 						<!-- Signin btn -->
+						
 						<div class="dorne-signin-btn">
-							<a href="#">تسجيل الدخول /انشاء حساب</a>
+							<a  href="#" onclick="showModal()">تسجيل الدخول / انشاء حساب</a>
 						</div>
 						<!-- Add listings btn -->
 						<!-- <div class="dorne-add-listings-btn">
@@ -120,7 +121,7 @@
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <img class="card-img rounded-0" src="https://i.pinimg.com/736x/0c/d2/ad/0cd2ad6c4cca268cbb9132649dae5193.jpg" alt="صورة المقال">
-                                <a href="#" class="blog_item_date">
+                                <a href="blog\single-blog.html" class="blog_item_date">
                                     <h3>15</h3>
                                     <p>يناير</p>
                                 </a>
@@ -132,23 +133,25 @@
                                 </a>
                                 <p>اكتشفوا جمال هذه الوجهة الجديدة التي تأخذكم إلى عالم مليء بالمغامرة والاستكشاف. استمتعوا بأجواء فريدة وتجارب لا تُنسى تناسب الجميع.</p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> سياحة، استكشاف</a></li>
+                                    <li><a href="images\single-blog.html"><i class="fa fa-user"></i> سياحة، استكشاف</a></li>
                                     <li><a href="#"><i class="fa fa-comments"></i> 3 تعليقات</a></li>
                                 </ul>
                             </div>
                         </article>
 
                         <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="https://i.pinimg.com/736x/4b/a8/61/4ba861312c84b4087009e5aae8b6ceed.jpg" alt="صورة قلعة عجلون">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>يناير</p>
-                                </a>
-                            </div>
+<div class="blog_item_img">
+    <a href="blog/single-blog.html">
+        <img class="card-img rounded-0 img-fluid" src="https://i.pinimg.com/736x/0c/d2/ad/0cd2ad6c4cca268cbb9132649dae5193.jpg" alt="صورة المقال">
+    </a>
+    <a href="blog/single-blog.html" class="blog_item_date">
+        <h3>15</h3>
+        <p>يناير</p>
+    </a>
+</div>
                         
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
+                                <a class="d-inline-block" href="css\single-blog.html">
                                     <h2>استكشاف قلعة عجلون: تاريخ وحكايات من العصور الوسطى</h2>
                                 </a>
                                 <p>قلعة عجلون، إحدى أبرز القلاع التاريخية في الأردن، تتمتع بإطلالات ساحرة على وادي عجلون والمناطق المحيطة بها. تم بناؤها في القرن الثاني عشر بهدف الدفاع ضد الهجمات الصليبية، وتعتبر اليوم وجهة سياحية مثالية لاستكشاف التاريخ والثقافة.</p>
@@ -171,7 +174,7 @@
     </div>
 
     <div class="blog_details">
-        <a class="d-inline-block" href="single-blog.html">
+        <a class="d-inline-block" href="css\single-blog.html">
             <h2>اكتشاف الوجهات الخفية في الأردن: أماكن سياحية لا تعرفها</h2>
         </a>
         <p>هل ظننت أنَّك قد رأيت كل شيء في الأردن؟ في هذا المقال، نقدم لك مجموعة من الوجهات السياحية الخفية التي لا يعرفها الكثيرون. من قرى الجبال المنعزلة إلى المواقع الطبيعية التي تأسر الأنفاس، هناك دائمًا مكان جديد يكتشف في هذا البلد التاريخي.</p>
@@ -191,7 +194,7 @@
     </div>
 
     <div class="blog_details">
-        <a class="d-inline-block" href="single-blog.html">
+        <a class="d-inline-block" href="css\single-blog.html">
             <h2>اكتشاف الوجهات الخفية في الأردن: أماكن سياحية لا تعرفها</h2>
         </a>
         <p>هل ظننت أنَّك قد رأيت كل شيء في الأردن؟ في هذا المقال، نقدم لك مجموعة من الوجهات السياحية الخفية التي لا يعرفها الكثيرون. من قرى الجبال المنعزلة إلى المواقع الطبيعية التي تأسر الأنفاس، هناك دائمًا مكان جديد يكتشف في هذا البلد التاريخي.</p>
@@ -212,7 +215,7 @@
     </div>
 
     <div class="blog_details">
-        <a class="d-inline-block" href="single-blog.html">
+        <a class="d-inline-block" href="css\single-blog.html">
             <h2>اكتشاف الوجهات الخفية في الأردن: أماكن سياحية لا تعرفها</h2>
         </a>
         <p>هل ظننت أنَّك قد رأيت كل شيء في الأردن؟ في هذا المقال، نقدم لك مجموعة من الوجهات السياحية الخفية التي لا يعرفها الكثيرون. من قرى الجبال المنعزلة إلى المواقع الطبيعية التي تأسر الأنفاس، هناك دائمًا مكان جديد يكتشف في هذا البلد التاريخي.</p>
