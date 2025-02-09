@@ -637,7 +637,28 @@ li {
 
 
 
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* مسافة بين الزر والمعلومات */
+}
 
+.user-image {
+  width: 40px; /* عرض الصورة */
+  height: 40px; /* ارتفاع الصورة */
+  border-radius: 50%; /* لجعلها دائرية */
+  margin-left: 10px; /* مسافة بين الصورة والاسم */
+}
+
+.user-name {
+  margin-left: 5px; /* مسافة بين الصورة والاسم */
+}
+
+#searchInput {
+    margin-top: 10px;
+    padding: 5px;
+    width: 200px;
+}
 
 /* =====================================Welcome Area CSS=================================================== */
 
@@ -926,58 +947,68 @@ li {
   background: #000000;
   opacity: 1;
 }
-/* ===================================about======================================================================== */
 
+.dorne-signin-btn {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+
+/* ===================================about======================================================================== */
 
 .about-img {
   position: relative;
   display: flex;
-  justify-content: center; /* محاذاة الصور */
+  justify-content: center;
   align-items: center;
-  gap: 20px; /* مسافة بسيطة */
+  gap: 20px;
   height: auto;
 }
 
 .about-img img {
-  width: 45%; /* عرض الصور */
+  width: 45%;
   height: auto;
   object-fit: cover;
-  border: 5px solid #d4a373; /* لون الإطار */
-  border-radius: 10px; /* زوايا دائرية */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ظل */
-  position: relative; /* يسمح بالتداخل */
-  transition: transform 0.3s ease-in-out; /* تأثير التكبير */
+  border: 5px solid #d4a373;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.3s ease-in-out;
 }
 
 .about-img img:first-child {
-  transform: translate(-20px, 20px); /* تداخل الصورة الأولى لليمين والأسفل */
-  z-index: 1; /* تراكب فوق الصورة الأخرى */
+  transform: translate(-20px, 20px);
+  z-index: 1;
 }
 
 .about-img img:last-child {
-  transform: translate(20px, -20px); /* تداخل الصورة الثانية لليسار والأعلى */
-  z-index: 0; /* أسفل الصورة الأولى */
+  transform: translate(20px, -20px);
+  z-index: 0;
 }
 
 .about-img img:hover {
-  transform: scale(1.05); /* تكبير عند التمرير */
+  transform: scale(1.05);
 }
 
 /* استعلامات الإعلام للهواتف */
 @media (max-width: 768px) {
   .about-img {
-    flex-direction: column; /* الصور فوق بعضها */
-    gap: 15px;
+      flex-direction: column;
+      gap: 15px;
   }
 
   .about-img img {
-    width: 80%; /* عرض الصور أكبر */
-    margin: 0 auto; /* توسيط الصور */
-    transform: none; /* إلغاء التداخل */
+      width: 80%;
+      margin: 0 auto;
+      transform: none;
   }
 }
 
-
+/* إضافة أنماط لشريط العدّاد */
+#destination-counter {
+  font-size: 3rem;
+}
 
 
 
@@ -2421,18 +2452,30 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 /* =======================================login================================================================= */
 .login-modal {
-    display: none; /* إخفاء افتراضي */
-    position: fixed;
-    top:60px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed; /* يجعل المودال غير مرتبط بالـ navbar */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* أو أي حجم مناسب */
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1000; /* يضمن ظهوره فوق باقي العناصر */
 }
 
+.login-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
 /* زر الإغلاق */
 .close-btn {
     position: absolute;
@@ -2442,14 +2485,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     color: #fff;
     cursor: pointer;
 }
-*,:after,:before{box-sizing:border-box}
-.clearfix:after,.clearfix:before{content:'';display:table}
-.clearfix:after{clear:both;display:block}
-a{color:inherit;text-decoration:none}
+
+
 
 .login-wrap{
 	width:100%;
-	margin:auto;
 	max-width:525px;
 	min-height:670px;
 	position:relative;
@@ -2610,9 +2650,7 @@ a{color:inherit;text-decoration:none}
   .hero-content h2 {
       font-size: 50px;
   }
-  .hero-social-btn {
-      bottom: 130px;
-  }
+
   .hero-search-form .tab-content .tab-pane form .custom-select {
       padding: 0 50px 0 20px;
       
@@ -2635,6 +2673,9 @@ a{color:inherit;text-decoration:none}
   .single-contact-info:first-child {
       margin-right: 15px;
   }
+  #hero-social-btn {
+    display: none;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2664,11 +2705,7 @@ a{color:inherit;text-decoration:none}
       color: #fff;
       font-size: 42px;
   }
-  .hero-social-btn {
-      bottom: 140px;
-      left: 30px;
-      z-index: 0;
-  }
+
   .hero-search-form .tab-content .tab-pane form .custom-select {
       padding: 0 10px;
       margin-right: 5px;
@@ -2766,9 +2803,7 @@ a{color:inherit;text-decoration:none}
       color: #fff;
       font-size: 24px;
   }
-  .hero-social-btn {
-      display: none;
-  }
+ 
   .hero-search-form .tab-content .tab-pane form .custom-select {
       padding: 0 10px;
       margin-right: 5px;
@@ -2913,5 +2948,6 @@ a{color:inherit;text-decoration:none}
       padding: 30px 10px;
       font-size: 14px;
   }
+
 }
 

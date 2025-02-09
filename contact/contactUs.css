@@ -3,8 +3,8 @@
 
 
 :root{
-    --bg-color:rgb(2, 44, 67);
-    --seconed-bg-color: rgb(17, 81, 115);
+    --bg-color:#022c43;
+    --seconed-bg-color: #115173;
    --main-color: #FFD700;
    --text-color-one:#FFFFFF;
    --font-family-titel:'Tajawal', sans-serif;
@@ -654,259 +654,145 @@
 .names {
     font-size: 5rem; /* Adjust size as needed */
     font-weight: bold;
-   margin-top: 50px;
-   text-align:center ;
-    color: #fff; /* White color for the text */
+    margin-top: 100px; /* المسافة من الأعلى */
+margin-left: 250px;
+    text-align: center; /* توسيط النص */
+    color: #fff; /* اللون الأبيض للنص */
+    position: absolute; /* لجعل العنصر في موضع محدد */
+    top: 0; /* وضع العنصر في أعلى الصفحة */
+    left: 50%;
+    transform: translateX(-50%); /* تحريك العنصر ليتوسط */
+    width: 100%; /* تأكد من أن العرض 100% */
 }
-
-
 
 
 /* ============================================================= */
-.vision {
-    background-color: #f8f9fa; /* لون خلفية خفيف */
-    padding: 60px 0; /* زيادة padding */
-}
-
-.border-img {
-    border: 5px solid #007bff; /* حدود للصورة */
-    transition: transform 0.3s; /* تأثير التحويل عند التمرير */
-}
-
-.border-img:hover {
-    transform: scale(1.05); /* تكبير الصورة عند التمرير */
-}
-
-.vision h4 {
-    color: #007bff; /* لون العنوان */
-    font-size: 4rem; /* زيادة حجم الخط للعنوان */
-    text-align: right; /* محاذاة النص لليمين */
-}
-
-p {
-    color: #555; /* لون النص */
-    font-size: 2rem; /* زيادة حجم الخط للنص */
-    line-height: 1.6; /* تباعد بين الأسطر */
-    text-align: right; /* محاذاة النص لليمين */
-}
 
 
 
-
-
-
-
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-title {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #2c3e50;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
+.contact-section .contact-info p a {
+    color: #1a1a1a; }
+  
+  .contact-section .box {
+    width: 100%;
     display: block;
-    margin-bottom: 5px;
-    color: #34495e;
-}
-
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-textarea {
-    resize: none;
-    height: 100px;
-}
-
-.submit-btn {
-    background-color:var(--bg-color);
-    color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-}
-
-.submit-btn:hover {
-    background-color: #c0392b;
-}
-
-
-/* تحسين الخلفية والتباين */
-.reviews {
-    background-color: #f8f9fa; /* خلفية فاتحة */
-}
-
-.reviews h3 {
-    font-size: 2rem; /* تكبير العنوان */
-    color: #007bff; /* لون العنوان */
-    font-weight: 700;
-}
-
-/* تخصيص شكل البطاقات */
-.card {
-    border-radius: 15px; /* تدوير الزوايا */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* تأثير الظل */
-    transition: transform 0.3s ease-in-out; /* تأثير التحويل */
-}
-
-.card:hover {
-    transform: translateY(-10px); /* تأثير رفع البطاقة عند التمرير */
-}
-
-/* تخصيص الخطوط */
-.card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #343a40; /* اللون الداكن للعناوين */
-}
-
-.card-text {
-    color: #6c757d; /* نص بلون رمادي */
-    font-size: 1rem;
-}
-
-/* تخصيص الأيقونات والنجوم */
-.text-warning {
-    font-size: 1.2rem;
-    display: inline-block;
-}
-
-/* تحسين التفاعل مع الأزرار */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #007bff; /* تغيير لون الأسهم */
-}
-
-/* تحسين التفاعل عند التمرير */
-.carousel-control-prev:hover, .carousel-control-next:hover {
-    background-color: rgba(0, 123, 255, 0.5); /* تأثير التظليل عند التمرير */
-}
-
-
-
-
-
-
-
-.reviews {
-    position: relative;
-    overflow: hidden;
-}
-
-.review-card {
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.review-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 25px 25px 50px #d0d0d0, -25px -25px 50px #ffffff;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #007bff;
-    border-radius: 50%;
-}
-
-h3 {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.card-title {
-    font-size: 1.5rem;
-}
-
-.card-text {
-    font-size: 1.2rem;
-}
-
-.text-warning {
-    font-size: 1.5rem;
-}
-
-
-
-
-
-
-
-
-/* Rating Stars */
-/* Rating Stars */
-.rating {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
+    background: rgba(0, 0, 0, 0.05); }
+    .contact-section .box .icon {
+      width: 100px;
+      height: 100px;
+      background: var(--seconed-bg-color);
+      margin: 0 auto;
+      margin-bottom: 15px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+      .contact-section .box .icon span {
+        color: #fff;
+        font-size: 30px; }
+    .contact-section .box h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--seconed-bg-color); }
   
-  .star {
-    font-size: 2rem;
-    cursor: pointer;
-    color: #ccc; /* اللون الافتراضي */
-    transition: color 0.3s ease;
-  }
-  
-  .star.active {
-    color: gold; /* اللون عند التحديد */
-  }
-  
-  /* تنسيق الحقول الأخرى */
-  textarea.form-control, input[type="file"].form-control {
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  button[type="submit"].btn {
-    background-color: var(--bg-color);
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: none;
-  }
-  
-  button[type="submit"].btn:hover {
-    background-color: var(--hover-color);
-  }
-  
+  .contact-section .contact-form {
+    width: 100%; }
+
+    .icon-img {
+        width: 50px; /* Adjust size as needed */
+        height: 50px; /* Keep aspect ratio */
+        margin-bottom: 15px; /* Space between icon and text */
+    }
+    
+    .contact-info .box {
+        margin-top: 20px; /* Space above the box */
+        margin-bottom: 20px; /* Space below the box */
+    }
+    
+    .contact-form {
+        margin-top: 20px; /* Space above the form */
+        margin-bottom: 20px; /* Space below the form */
+    }
+    
+    #map {
+        height: 400px; /* Set a fixed height for the map */
+        width: 100%; /* Full width */
+    }
 
 
 
-
-
-
-
+    /* فورم التجربة الجديدة */
+    .contact-form-section {
+        padding: 40px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: auto;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: var(--main-color); /* لون العنوان */
+        font-weight: 600;
+    }
+    
+    p {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #555; /* لون النص */
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .form-control, .form-control-file {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    
+    .form-control:focus {
+        border-color: var(--main-color); /* لون الحدود عند التركيز */
+        box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+    }
+    
+    .btn-submit {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--main-color);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .btn-submit:hover {
+        background-color: #c82333;
+    }
+    
+    .form-text {
+        margin-top: 5px;
+        font-size: 12px;
+        color: #6c757d; /* لون النص التفسيري */
+     
+    }
   /* ================================footer=====================================================*/
   .site-footer {
     font-size: 14px;

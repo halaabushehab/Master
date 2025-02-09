@@ -106,27 +106,39 @@ const places_1 = [
 
 
   
-
   function showModal() {
-      const loginModal = document.getElementById('login-modal');
-      loginModal.style.display = 'flex'; // إظهار النافذة
-  }
-  
-  // إغلاق النافذة عند الضغط على زر الإغلاق
-  function closeModal() {
-      const loginModal = document.getElementById('login-modal');
-      loginModal.style.display = 'none'; // إخفاء النافذة
-  }
-  
-  // إغلاق النافذة عند الضغط خارجها
-  window.onclick = function (event) {
-      const loginModal = document.getElementById('login-modal');
-      if (event.target === loginModal) {
-          loginModal.style.display = 'none';
-      }
-  };
-  
-  
+    document.getElementById('login-modal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('login-modal').style.display = 'none';
+}
+
+
+
+
+
+// وظيفة لتسجيل الدخول
+function loginUser() {
+    // هنا يمكنك إضافة الكود اللازم لتسجيل الدخول (مثل التحقق من بيانات المستخدم)
+
+    // بعد تسجيل الدخول، إخفاء زر تسجيل الدخول
+    document.getElementById('signin-btn').style.display = 'none';
+
+    // عرض معلومات المستخدم
+    document.getElementById('user-info').style.display = 'flex'; // يجعل المستخدم مرئيًا
+
+    // تحديث اسم المستخدم وصورته
+    const userName = "اسم المستخدم"; // استبدل هذا بالاسم الفعلي للمستخدم
+    const userImage = "path_to_user_image.jpg"; // استبدل هذا بمسار الصورة الفعلي
+    document.querySelector('.user-name').textContent = userName;
+    document.querySelector('.user-image').src = userImage;
+
+    // إغلاق نافذة تسجيل الدخول بعد تسجيل الدخول بنجاح
+    closeModal();
+}
+
+
 
 
 
@@ -162,7 +174,7 @@ const places_1 = [
 //         `;
 //         resultsContainer.innerHTML += card;
 //     });
-}
+// }
 
 // // دالة للبحث
 // function searchPlaces(event) {
@@ -191,50 +203,57 @@ const places_1 = [
 
 
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   const relatedDiv = document.querySelector(".related");
 
+//   // إضافة حدث للنقر على الروابط
+//   document.querySelectorAll(".dropdown-item").forEach((link) => {
+//     link.addEventListener("click", (event) => {
+//       event.preventDefault(); // منع السلوك الافتراضي
+//       const city = event.target.dataset.city; // الحصول على المدينة
+//       displayPlaces(city);
+//     });
+//   });
 
+//   // وظيفة لعرض الأماكن بناءً على المدينة المختارة
+//   function displayPlaces(city) {
+//     // تصفية الأماكن بناءً على المدينة
+//     const filteredPlaces = places_1.filter((place) =>
+//       place.location.includes(city) // تأكد من أن المقارنة صحيحة
+//     );
 
+//     // تفريغ المحتوى الحالي
+//     relatedDiv.innerHTML = "";
 
+//     // إنشاء الكروت وإضافتها
+//     filteredPlaces.forEach((place) => {
+//       const card = document.createElement("div");
+//       card.className = "card shadow-lg";
+//       card.style.width = "18rem";
+//       card.style.position = "relative";
 
+//       card.innerHTML = `
+//         <img src="${place.image}" class="card-img-top" alt="${place.name}">
+//         <div class="card-body">
+//           <h5 class="card-title">${place.name}</h5>
+//           <p class="card-text">${place.description}</p>
+//           <div class="d-flex justify-content-between align-items-center">
+//             <span class="price">${place.price || "السعر غير متوفر"}</span>
+//           </div>
+//           <div class="mt-3 text-center" style="display: flex; justify-content: space-around;">
+//             <a href="more-details.html" class="btn btn-primary" 
+//                style="background-color: rgb(17, 81, 115); border: none; color: white;">
+//               المزيد من التفاصيل
+//             </a>
+//             <a href="favorite" target="_blank">
+//               <img src="/img/lover.png" alt="Bookmark" 
+//                    style="width: 25px; height: 25px; margin-right: 10px;"/>
+//             </a>
+//           </div>
+//         </div>
+//       `;
 
-// كارد  عمان واربد و الزرقا
-
-// اختيار العنصر الذي سيتم إدخال الكروت فيه
-const relatedDiv = document.querySelector(".related");
-
-// إضافة حدث للنقر على الروابط
-document.querySelectorAll(".dropdown-item").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault(); // منع السلوك الافتراضي
-    const city = event.target.dataset.city; // الحصول على المدينة
-    displayPlaces(city);
-  });
-});
-
-// وظيفة لعرض الأماكن بناءً على المدينة المختارة
-function displayPlaces(city) {
-  // تصفية الأماكن بناءً على المدينة
-  const filteredPlaces = places_1.filter((place) =>
-    place.location.includes(city)
-  );
-
-  // تفريغ المحتوى الحالي
-  relatedDiv.innerHTML = "";
-
-  // إنشاء الكروت وإضافتها
-  filteredPlaces.forEach((place) => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
-      <img src="${place.image}" alt="${place.name}">
-      <div class="card-body">
-        <h3>${place.name}</h3>
-        <p>${place.description}</p>
-        <p><strong>الموقع:</strong> ${place.location}</p>
-        <button>المزيد من التفاصيل</button>
-        <button style="background-color: #f00; margin-left: 5px;">❤</button>
-      </div>
-    `;
-    relatedDiv.appendChild(card);
-  });
-}
+//       relatedDiv.appendChild(card);
+//     });
+//   }
+// });

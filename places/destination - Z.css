@@ -702,63 +702,65 @@
   justify-content: center;  /* محاذاة البطاقات في منتصف الشاشة */
   padding: 20px;
 }
+
 .product-card {
-  background-color: var(--bg-color);  /* اللون الخلفي للكارد */
-  color: white;
-  border-radius: 10px;
-  width: 300px;  /* عرض مناسب لكل بطاقة */
-  height: 500px;  /* تحديد الارتفاع الثابت لكل بطاقة */
-  margin: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.9); /* خلفية البطاقة */
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 15px; /* مسافة بين البطاقات */
+  overflow: hidden; /* إخفاء الأجزاء الزائدة */
+  transition: transform 0.3s, box-shadow 0.3s; /* تأثير التحويم */
+  width: 300px; /* عرض البطاقة */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* تكبير البطاقة عند التحويم */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .product-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;  /* التأكد من ملاءمة الصورة داخل الكارد */
+  height: 200px; /* ارتفاع الصورة */
+  object-fit: cover;
 }
 
 .card-body {
-  padding: 20px;
-  height: calc(100% - 200px); /* لضمان أن المساحة المتبقية تكون متوافقة مع محتوى النص */
-  overflow: hidden;  /* لإخفاء أي محتوى يتجاوز الارتفاع المحدد */
+  padding: 15px; /* حشو داخلي */
+  text-align: center; /* محاذاة النص في الوسط */
 }
 
 .card-title {
-  font-size: 1.25em;
-  margin-bottom: 15px;
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333; /* لون النص */
 }
 
 .card-text {
-  font-size: 1em;
-  margin-bottom: 20px;
+  color: #666; /* لون النص الفرعي */
+  margin: 10px 0;
 }
 
 .price {
-  font-weight: bold;
-}
-
-.rating {
-  font-size: 1.1em;
-  color: #FFD700;
+  font-weight: bold; /* جعل السعر بارز */
+  margin: 10px 0; /* إضافة مسافة حول السعر */
+  color: #e74c3c; /* لون السعر */
 }
 
 .buy-btn {
-  background-color: var(--seconed-bg-color);
-  color: white;
+  background-color: #007bff; /* لون الزر */
+  color: white; /* لون النص */
   border: none;
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s; /* تأثير التحويم */
 }
 
 .buy-btn:hover {
-  background-color: #0A3D4B;
+  background-color: #0056b3; /* تغيير لون الزر عند التحويم */
 }
+
+
 
 
 

@@ -56,24 +56,25 @@
 		<div class="row h-100">
 			<div class="col-12 h-100">
 				<nav class="h-100 navbar navbar-expand-lg">
-					<a class="navbar-brand" href="index.html"><img src="img/Screenshot 2025-01-24 235121.png" alt="jordan.png"></a>
+					<a class="navbar-brand" href="../index.html"><img src="/img/Screenshot 2025-01-24 235121.png" alt="jordan.png">
+					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
 					<!-- Nav -->
 					<div class="collapse navbar-collapse" id="dorneNav">
 						<ul class="navbar-nav mr-auto" id="dorneMenu">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.html">الصفحة الرئيسية <span class="sr-only"></span></a>
+								<a class="nav-link" href="../index.html">الصفحة الرئيسية <span class="sr-only"></span></a>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#destination.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">المدن <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="places\destination.html">عمان </a>
-									<a class="dropdown-item" href="places\destination - Z.html">الزرقاء</a>
-									<a class="dropdown-item" href="places\destination - I.html"> اربد</a>
+									<a class="dropdown-item" href="../places/destination .html">عمان </a>
+									<a class="dropdown-item" href="../places/destination - Z.html">الزرقاء</a>
+									<a class="dropdown-item" href="../places/destination - I.html"> اربد</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown" style="margin-left: 10px;">
-                <a class="nav-link dropdown-toggle" href="blog\blogBage.html" id="navbarDropdown2"   aria-haspopup="true" aria-expanded="false">المدونة <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <a class="nav-link dropdown-toggle" href="../blog/blogBage.html" id="navbarDropdown2"   aria-haspopup="true" aria-expanded="false">المدونة <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 								<!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">المدونة <i class="fa fa-angle-down" aria-hidden="true"></i></a> -->
 								<!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
 									<a class="dropdown-item" href="index.html">أماكن عائلية ممتعة </a>
@@ -84,7 +85,7 @@
 								</div> -->
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="contact\contactUs.html">تواصل معنا</a>
+								<a class="nav-link" href="../contact/contactUs.html">تواصل معنا</a>
 							</li>
 						</ul>
 						<!-- Search btn -->
@@ -130,7 +131,7 @@
 			  <!-- النص -->
 			  <div class="col-md-6">
 				<div class="card-body text-white " style="font-size: 35px;">
-				  <h3 class="card-title">اربد</h3>
+				  <h3 class="card-title" style="color: aliceblue;">اربد</h3>
 				  <p class="card-text">
 					اربد، المعروفة باسم "عروس الشمال"، هي مدينة تتميز بجمالها الطبيعي وتراثها الثقافي الغني. تشتهر بمناخها المعتدل وطبيعتها الخلابة، مما يجعلها وجهة مثالية للاسترخاء والاستمتاع بالهواء الطلق. سواء كنت تبحث عن استكشاف المواقع الأثرية أو الاستمتاع بالمناظر الطبيعية، فإن إربد تقدم تجربة فريدة لكل زائر.
 				  </p>
@@ -142,12 +143,12 @@
   
 		  <!-- قائمة الأزرار مع التمرير -->
 		  <div class="scrollable-buttons mt-3">
+			<a href="../places/destination-details.html" class="btn btn-primary me-2">متاحف</a>
+			<a href="../places/destination-details - sport - child.html" class="btn btn-primary me-2">الاندية الرياضيه</a>
 			<a href="#" class="btn btn-primary me-2">مطاعم</a>
-			<a href="#" class="btn btn-primary me-2">المنتجعات</a>
-			<a href="#" class="btn btn-primary me-2">ملاعب</a>
 			<a href="#" class="btn btn-primary me-2">ترفيه وألعاب</a>
-			<a href="#" class="btn btn-primary me-2">مقاهي الدراسة</a>
-			<a href="#" class="btn btn-primary me-2">تسوق</a>
+			<a href="#" class="btn btn-primary me-2"> اماكن اثرية</a>
+			<a href="#" class="btn btn-primary me-2">اماكن للتصوير</a>
 			<a href="#" class="btn btn-primary me-2">ثقافة وفنون</a>
 		  </div>
 		</div>
@@ -155,7 +156,23 @@
 	</div>
   </section>
 <h2 class="section-title">الوجهات ذات الصلة</h2>
-
+  <!-- البحث وزر المفضلة -->
+  <div class="search-favorite d-flex justify-content-between align-items-center mb-4">
+    <!-- حقل البحث -->
+    <div class="search-bar">
+        <input type="text" class="form-control" placeholder=" 🔎ابحث عن المتحف" id="searchInput" />
+    </div>
+    <!-- زر المفضلة -->
+	<div class="favorite-icon">
+		<a href="favorite" target="_blank">
+			<img src="/img/lover.png" alt="Bookmark" style="width: 50px; height: 50px; margin-right: 10px;"/>
+		</a>
+		
+		<a href="../reason/features_1.html" target="_blank">
+			<img src="/img/season.png" alt="Bookmark" style="width: 50px; height: 50px;"/>
+		</a>
+	</div>
+</div>
 <!-- ===========================================main -============================================================= -->
 <div class="related-gifts">
 
@@ -174,8 +191,12 @@
             <div class="d-flex justify-content-between align-items-center">
               <span class="price">دخول مجاني</span>
             </div>
-            <div class="mt-3 text-center">
-              <button class="buy-btn">المزيد من التفاصيل <i class="fas fa-heart"></i></button>
+            <div class="mt-3 text-center" style="display: flex; justify-content: space-around;">
+                <a href="more-details.html" class="btn btn-primary" style="background-color: rgb(17, 81, 115); border: none ; color: white;">المزيد من التفاصيل</a>
+				<a href="favorite" target="_blank">
+					<img src="/img/lover.png" alt="Bookmark" style="width: 25px; height: 25px; margin-right: 10px;"/>
+				</a>
+			
             </div>
           </div>
         </div>
@@ -195,8 +216,12 @@
             <div class="d-flex justify-content-between align-items-center">
               <span class="price">دخول مجاني</span>
             </div>
-            <div class="mt-3 text-center">
-              <button class="buy-btn">المزيد من التفاصيل <i class="fas fa-heart"></i></button>
+			<div class="mt-3 text-center" style="display: flex; justify-content: space-around;">
+                <a href="more-details.html" class="btn btn-primary" style="background-color: rgb(17, 81, 115); border: none ; color: white;">المزيد من التفاصيل</a>
+				<a href="favorite" target="_blank">
+					<img src="/img/lover.png" alt="Bookmark" style="width: 25px; height: 25px; margin-right: 10px;"/>
+				</a>
+			
             </div>
           </div>
         </div>
@@ -216,9 +241,13 @@
 			<div class="d-flex justify-content-between align-items-center">
 			  <span class="price">متوسط الأسعار: 15 دينار للشخص</span>
 			</div>
-			<div class="mt-3 text-center">
-			  <button class="buy-btn">المزيد من التفاصيل <i class="fas fa-heart"></i></button>
-			</div>
+			<div class="mt-3 text-center" style="display: flex; justify-content: space-around;">
+                <a href="more-details.html" class="btn btn-primary" style="background-color: rgb(17, 81, 115); border: none ; color: white;">المزيد من التفاصيل</a>
+				<a href="favorite" target="_blank">
+					<img src="/img/lover.png" alt="Bookmark" style="width: 25px; height: 25px; margin-right: 10px;"/>
+				</a>
+			
+            </div>
 		  </div>
 		</div>
 	  </div>
@@ -238,8 +267,12 @@
             <div class="d-flex justify-content-between align-items-center">
               <span class="price">دخول مجاني</span>
             </div>
-            <div class="mt-3 text-center">
-              <button class="buy-btn">المزيد من التفاصيل <i class="fas fa-heart"></i></button>
+			<div class="mt-3 text-center" style="display: flex; justify-content: space-around;">
+                <a href="more-details.html" class="btn btn-primary" style="background-color: rgb(17, 81, 115); border: none ; color: white;">المزيد من التفاصيل</a>
+				<a href="favorite" target="_blank">
+					<img src="/img/lover.png" alt="Bookmark" style="width: 25px; height: 25px; margin-right: 10px;"/>
+				</a>
+			
             </div>
           </div>
         </div>

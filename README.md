@@ -13,6 +13,6 @@ The goal of wayn naruh is to make it easier to discover new places and exciting 
 
 ## 🌐 Website
 
-**Visit us at:** [Tiny Joys](https://halaabushehab.github.io/Master/)
+**Visit us at:** [ wayn naruh](https://halaabushehab.github.io/Master/)
 - **Wireframe & Mockup Link**: [Here](https://www.figma.com/design/sSLkrTaUM2d1yDBIVwp9y1/project-1?node-id=0-1&p=f&t=uZ6ukHGbyfJVUTpa-0)
 

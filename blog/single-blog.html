@@ -26,6 +26,7 @@
    <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/slicknav.css">
  
+
    <link rel="stylesheet" href="single-blog.css">
    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
@@ -36,7 +37,8 @@
             <div class="row h-100">
                 <div class="col-12 h-100">
                     <nav class="h-100 navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html"><img src="img/Screenshot 2025-01-24 235121.png" alt="jordan.png"></a>
+                        <a class="navbar-brand" href="index.html"><img src="/img/Screenshot 2025-01-24 235121.png" alt="jordan.png">
+                        </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <!-- Nav -->
                         <div class="collapse navbar-collapse" id="dorneNav">
@@ -109,17 +111,195 @@
 
         <!-- محتوى الصفحة هنا -->
     <!--/ bradcam_area  -->
-    <main>
+ 
         <!-- محتوى الصفحة هنا -->
     <!--/ bradcam_area  -->
   
      <!--================Blog Area =================-->
 
  <!--================Blog Area =================-->
- <section class="blog_area single-post-area section-padding">
     <div class="container">
        <div class="row">
+         <div class="col-lg-4">
+            <div class="blog_left_sidebar  mt-5" >
+               <aside class="single_sidebar_widget search_widget">
+                  <form action="#">
+                     <div class="form-group">
+                        <div class="input-group mb-3">
+                           <input type="text" class="form-control" placeholder='ابحث عن كلمة مفتاحية'
+                              onfocus="this.placeholder = ''" onblur="this.placeholder = 'ابحث عن كلمة مفتاحية'">
+                           <div class="input-group-append">
+                              <button class="btn" type="button"><i class="ti-search"></i></button>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                        type="submit">بحث</button>
+                  </form>
+               </aside>
+               <aside class="single_sidebar_widget post_category_widget">
+                  <h4 class="widget_title">التصنيفات</h4>
+                  <ul class="list cat-list">
+                     <li>
+                        <a href="#" class="d-flex">
+                           <p>طعام المطاعم</p>
+                           <p>(37)</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="d-flex">
+                           <p>أخبار السفر</p>
+                           <p>(10)</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="d-flex">
+                           <p>التكنولوجيا الحديثة</p>
+                           <p>(03)</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="d-flex">
+                           <p>المنتجات</p>
+                           <p>(11)</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="d-flex">
+                           <p>الإلهام</p>
+                           <p>(21)</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="d-flex">
+                           <p>الرعاية الصحية</p>
+                           <p>(21)</p>
+                        </a>
+                     </li>
+                  </ul>
+               </aside>
+               <aside class="single_sidebar_widget popular_post_widget">
+                  <h3 class="widget_title">المشاركات الأخيرة</h3>
+                  <div class="media post_item">
+                    <img src="data:image/jpeg;base64,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" alt="صورة نادي أطفال">
+                    <div class="media-body">
+                      <a href="single-blog.html">
+                        <h3>أفضل أندية الأطفال في الأردن</h3>
+                      </a>
+                      <p>12 يناير 2023</p>
+                    </div>
+                  </div>
+                  <div class="media post_item">
+                    <img src="https://cdn.timeoutamman.com/wp-content/uploads/2022/12/images-6-4.jpeg" alt="صورة موقع تسلق">
+                    <div class="media-body">
+                      <a href="single-blog.html">
+                        <h3>أشهر مواقع التسلق في الأردن</h3>
+                      </a>
+                      <p>منذ ساعتين</p>
+                    </div>
+                  </div>
+                  <div class="media post_item">
+                    <img src="https://static.hiamag.com/styles/autox754/public/article/26/02/2018/6567921-549824549.jpg" alt="صورة حديقة">
+                    <div class="media-body">
+                      <a href="single-blog.html">
+                        <h3>أجمل الحدائق في الأردن</h3>
+                      </a>
+                      <p>منذ 3 ساعات</p>
+                    </div>
+                  </div>
+                  <div class="media post_item">
+                    <img src="https://cdn.alweb.com/thumbs/jeeran/article/fit400x300/%D8%A5%D9%84%D9%8A%D9%83-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A8%D8%A3%D8%B4%D9%87%D9%89-%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D9%81%D9%8A-%D9%88%D8%B3%D8%B7-%D8%A7%D9%84%D8%A8%D9%84%D8%AF-%D8%B9%D9%85%D8%A7%D9%86.jpg" alt="صورة مطعم">
+                    <div class="media-body">
+                      <a href="single-blog.html">
+                        <h3>أشهر المطاعم في الأردن</h3>
+                      </a>
+                      <p>منذ ساعة</p>
+                    </div>
+                  </div>
+               </aside>
+               <aside class="single_sidebar_widget tag_cloud_widget">
+                  <h4 class="widget_title">الكلمات الدلالية</h4>
+                  <ul class="list">
+                     <li>
+                        <a href="#">مشروع</a>
+                     </li>
+                     <li>
+                        <a href="#">حب</a>
+                     </li>
+                     <li>
+                        <a href="#">تكنولوجيا</a>
+                     </li>
+                     <li>
+                        <a href="#">سفر</a>
+                     </li>
+                     <li>
+                        <a href="#">مطعم</a>
+                     </li>
+                     <li>
+                        <a href="#">نمط حياة</a>
+                     </li>
+                     <li>
+                        <a href="#">تصميم</a>
+                     </li>
+                     <li>
+                        <a href="#">رسم</a>
+                     </li>
+                  </ul>
+               </aside>
+               
+               <aside class="single_sidebar_widget instagram_feeds ">
+                  <h4 class="widget_title">إنستغرام</h4>
+                  <ul class="instagram_row flex-wrap">
+                     <li>
+                        <a href="#">
+                           <img class="img-fluid" src="https://i.pinimg.com/736x/09/6f/8b/096f8b050095e82cc66af6fd813b5795.jpg" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img class="img-fluid" src="https://i.pinimg.com/236x/58/86/a1/5886a1c9fca1b93683bd870b63bc7ae4.jpg" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img class="img-fluid" src="https://i.pinimg.com/236x/5d/80/3a/5d803a6b5b248e9cc151bae8cb5db0d7.jpg" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img class="img-fluid" src="https://i.pinimg.com/736x/20/07/1d/20071d90d5687608e3a12c1e028875a2.jpg" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img class="img-fluid" src="https://i.pinimg.com/736x/20/07/1d/20071d90d5687608e3a12c1e028875a2.jpg" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img class="img-fluid" src="https://i.pinimg.com/736x/09/6f/8b/096f8b050095e82cc66af6fd813b5795.jpg" alt="">
+                        </a>
+                     </li>
+                  </ul>
+               </aside>
+               <aside class="single_sidebar_widget newsletter_widget">
+                  <h4 class="widget_title">النشرة الإخبارية</h4>
+                  <form action="#">
+                     <div class="form-group">
+                        <input type="email" class="form-control" onfocus="this.placeholder = ''"
+                           onblur="this.placeholder = 'أدخل بريدك الإلكتروني'" placeholder='أدخل بريدك الإلكتروني' required>
+                     </div>
+                     <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                        type="submit">اشتراك</button>
+                  </form>
+               </aside>
+            </div>
+         </div>
+
+
+
          <div class="col-lg-8 posts-list">
+            
             <div class="single-post" ></div></a>
               <div class="feature-img">
                 <img class="img-fluid" src="/img/6567941-1854611281.jpg" alt="صورة المقال">
@@ -145,278 +325,118 @@
                   تُعد الحديقة اليابانية في الأردن واحدة من الوجهات الفريدة التي تجمع بين روعة الطبيعة وسحر التصميم الياباني التقليدي. تقع هذه الحديقة الجميلة في قلب العاصمة عمّان، وهي مستوحاة من التراث الثقافي الياباني، حيث تم تصميمها بعناية لتعكس مفهوم الانسجام مع الطبيعة والجمال البسيط. تضم الحديقة مجموعة مذهلة من الممرات الحجرية، والجسور الخشبية التي تعبر فوق برك المياه الصافية، بالإضافة إلى الأشجار والنباتات اليابانية المزروعة بعناية فائقة لتوفير أجواء هادئة. كما تحتوي الحديقة على شلالات صغيرة وحدائق زن التقليدية، التي تساعد الزائرين على التأمل والاسترخاء بعيدًا عن صخب الحياة اليومية. تعتبر الحديقة اليابانية مكانًا مثاليًا للأفراد والعائلات الذين يبحثون عن ملاذ هادئ للاستمتاع بالطبيعة والتقاط الصور التذكارية المميزة.
                   
                   إلى جانب جمالها الطبيعي، تُعد الحديقة اليابانية مركزًا ثقافيًا يعزز التبادل الثقافي بين الأردن واليابان. تقدم الحديقة فعاليات متنوعة تشمل العروض الثقافية اليابانية مثل حفلات الشاي التقليدية، وورش العمل الفنية، ومعارض الفن الياباني. كما تُستخدم الحديقة كمكان لإقامة المناسبات الخاصة، مما يجعلها وجهة مميزة للاحتفالات. تساهم هذه الحديقة في نشر الثقافة اليابانية وتعزيز الروابط بين الشعبين، بالإضافة إلى كونها مكانًا تعليميًا يعرّف الزوار على الفلسفة اليابانية في تصميم الحدائق، التي تركز على خلق بيئة تعكس التوازن والسكينة. زيارة الحديقة اليابانية في الأردن ليست مجرد تجربة ترفيهية، بل هي رحلة إلى عالم من الجمال والهدوء الذي يلامس الروح.</p>
-              </div>
-            </div>
-            <!-- Navigation Links -->
+           
+               </div>
+                 
+               
+
+                   <!-- Navigation Links -->
             <div class="navigation-top">
-              <div class="d-sm-flex justify-content-between text-center">
-                <p class="like-info"><span class="align-middle"><i class="fa fa-heart"></i></span> ليلى و 4 أشخاص أعجبهم هذا</p>
-                <ul class="social-icons">
-                  <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                  <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                </ul>
-              </div>
-              <div class="navigation-area">
-               <div class="row">
-                  <div class="col-lg-6 nav-left">
-                    <a href="#">
-                      <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaAVpOy39pmtJb7mhN-HEiQ-buT5iVDjRDiG-GGf9frZYvvz5Sn7PQFtL6XQqt6sJPwso&usqp=CAU" alt="صورة الحديقة اليابانية التقليدية">
-                      <h4>الحدائق اليابانية: فن الطبيعة والهدوء</h4>
-                    </a>
-                  </div>
-                  <div class="col-lg-6 nav-right">
-                    <a href="#">
-                      <h4>عناصر الحديقة اليابانية</h4>
-                      <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGjbRh8LVb2bCbAFvfPKa1e4FUIRe_VL47DSbk6nhUtS3ZyeWvsZDhslgRRMtxczi9mr0&usqp=CAU" alt="صورة عناصر الحديقة اليابانية">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Author Section -->
-            <div class="blog-author">
-              <div class="media align-items-center">
-                <img src="https://i.pinimg.com/736x/d9/8c/ac/d98cacb488d9246c5f8eba80221c2b42.jpg" alt="صورة الكاتب">
-                <div class="media-body">
-                  <a href="#"><h4>هارفارد ميلان</h4></a>
-                  <p>كاتب متخصص في السياحة...</p>
-                </div>
-              </div>
-            </div>
-            <!-- Comments Section -->
-            <div class="comments-area">
-              <h4>05 تعليقات</h4>
-              <div class="comment-list">
-                <div class="single-comment justify-content-between d-flex">
-                  <div class="user">
-                    <div class="thumb">
-                      <img src="https://i.pinimg.com/736x/f6/ee/13/f6ee1311d121ea0cef159ff502d21720.jpg" alt="صورة المعلق">
-                    </div>
-                    <div class="desc">
-                      <p class="comment">مقال رائع!</p>
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                          <h5><a href="#">إيميلي بلانت</a></h5>
-                          <p class="date">4 ديسمبر 2017 الساعة 3:12 مساءً</p>
-                        </div>
-                        <div class="reply-btn">
-                          <a href="#" class="btn-reply text-uppercase">رد</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Comment Form -->
-            <div class="comment-form">
-              <h4>اترك تعليقًا</h4>
-              <form class="form-contact comment_form" action="#" id="commentForm">
+               <div class="d-sm-flex justify-content-between text-center">
+                 <p class="like-info"><span class="align-middle"><i class="fa fa-heart"></i></span> ليلى و 4 أشخاص أعجبهم هذا</p>
+                 <ul class="social-icons">
+                   <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                   <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                   <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                 </ul>
+               </div>
+               <div class="navigation-area">
                 <div class="row">
-                  <div class="col-12">
-                    <div class="form-group">
-                      <textarea class="form-control w-100" name="comment" id="comment" placeholder="اكتب تعليقك"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input class="form-control" name="name" id="name" type="text" placeholder="الاسم">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input class="form-control" name="email" id="email" type="email" placeholder="البريد الإلكتروني">
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <button type="submit" class="button button-contactForm btn_1 boxed-btn">إرسال</button>
-                </div>
-              </form>
-            </div>
-          </div>
-          
-          <div class="col-lg-4">
-             <div class="blog_right_sidebar">
-                <aside class="single_sidebar_widget search_widget">
-                   <form action="#">
-                      <div class="form-group">
-                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder='ابحث عن كلمة مفتاحية'
-                               onfocus="this.placeholder = ''" onblur="this.placeholder = 'ابحث عن كلمة مفتاحية'">
-                            <div class="input-group-append">
-                               <button class="btn" type="button"><i class="ti-search"></i></button>
-                            </div>
-                         </div>
-                      </div>
-                      <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                         type="submit">بحث</button>
-                   </form>
-                </aside>
-                <aside class="single_sidebar_widget post_category_widget">
-                   <h4 class="widget_title">التصنيفات</h4>
-                   <ul class="list cat-list">
-                      <li>
-                         <a href="#" class="d-flex">
-                            <p>طعام المطاعم</p>
-                            <p>(37)</p>
-                         </a>
-                      </li>
-                      <li>
-                         <a href="#" class="d-flex">
-                            <p>أخبار السفر</p>
-                            <p>(10)</p>
-                         </a>
-                      </li>
-                      <li>
-                         <a href="#" class="d-flex">
-                            <p>التكنولوجيا الحديثة</p>
-                            <p>(03)</p>
-                         </a>
-                      </li>
-                      <li>
-                         <a href="#" class="d-flex">
-                            <p>المنتجات</p>
-                            <p>(11)</p>
-                         </a>
-                      </li>
-                      <li>
-                         <a href="#" class="d-flex">
-                            <p>الإلهام</p>
-                            <p>(21)</p>
-                         </a>
-                      </li>
-                      <li>
-                         <a href="#" class="d-flex">
-                            <p>الرعاية الصحية</p>
-                            <p>(21)</p>
-                         </a>
-                      </li>
-                   </ul>
-                </aside>
-                <aside class="single_sidebar_widget popular_post_widget">
-                   <h3 class="widget_title">المشاركات الأخيرة</h3>
-                   <div class="media post_item">
-                     <img src="data:image/jpeg;base64,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" alt="صورة نادي أطفال">
-                     <div class="media-body">
-                       <a href="single-blog.html">
-                         <h3>أفضل أندية الأطفال في الأردن</h3>
-                       </a>
-                       <p>12 يناير 2023</p>
-                     </div>
+                   <div class="col-lg-6 nav-left">
+                     <a href="#">
+                       <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaAVpOy39pmtJb7mhN-HEiQ-buT5iVDjRDiG-GGf9frZYvvz5Sn7PQFtL6XQqt6sJPwso&usqp=CAU" alt="صورة الحديقة اليابانية التقليدية">
+                       <h4>الحدائق اليابانية: فن الطبيعة والهدوء</h4>
+                     </a>
                    </div>
-                   <div class="media post_item">
-                     <img src="https://cdn.timeoutamman.com/wp-content/uploads/2022/12/images-6-4.jpeg" alt="صورة موقع تسلق">
-                     <div class="media-body">
-                       <a href="single-blog.html">
-                         <h3>أشهر مواقع التسلق في الأردن</h3>
-                       </a>
-                       <p>منذ ساعتين</p>
-                     </div>
+                   <div class="col-lg-6 nav-right">
+                     <a href="#">
+                       <h4>عناصر الحديقة اليابانية</h4>
+                       <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGjbRh8LVb2bCbAFvfPKa1e4FUIRe_VL47DSbk6nhUtS3ZyeWvsZDhslgRRMtxczi9mr0&usqp=CAU" alt="صورة عناصر الحديقة اليابانية">
+                     </a>
                    </div>
-                   <div class="media post_item">
-                     <img src="https://static.hiamag.com/styles/autox754/public/article/26/02/2018/6567921-549824549.jpg" alt="صورة حديقة">
-                     <div class="media-body">
-                       <a href="single-blog.html">
-                         <h3>أجمل الحدائق في الأردن</h3>
-                       </a>
-                       <p>منذ 3 ساعات</p>
-                     </div>
-                   </div>
-                   <div class="media post_item">
-                     <img src="https://cdn.alweb.com/thumbs/jeeran/article/fit400x300/%D8%A5%D9%84%D9%8A%D9%83-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A8%D8%A3%D8%B4%D9%87%D9%89-%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D9%81%D9%8A-%D9%88%D8%B3%D8%B7-%D8%A7%D9%84%D8%A8%D9%84%D8%AF-%D8%B9%D9%85%D8%A7%D9%86.jpg" alt="صورة مطعم">
-                     <div class="media-body">
-                       <a href="single-blog.html">
-                         <h3>أشهر المطاعم في الأردن</h3>
-                       </a>
-                       <p>منذ ساعة</p>
-                     </div>
-                   </div>
-                </aside>
-                <aside class="single_sidebar_widget tag_cloud_widget">
-                   <h4 class="widget_title">الكلمات الدلالية</h4>
-                   <ul class="list">
-                      <li>
-                         <a href="#">مشروع</a>
-                      </li>
-                      <li>
-                         <a href="#">حب</a>
-                      </li>
-                      <li>
-                         <a href="#">تكنولوجيا</a>
-                      </li>
-                      <li>
-                         <a href="#">سفر</a>
-                      </li>
-                      <li>
-                         <a href="#">مطعم</a>
-                      </li>
-                      <li>
-                         <a href="#">نمط حياة</a>
-                      </li>
-                      <li>
-                         <a href="#">تصميم</a>
-                      </li>
-                      <li>
-                         <a href="#">رسم</a>
-                      </li>
-                   </ul>
-                </aside>
-                <aside class="single_sidebar_widget instagram_feeds">
-                   <h4 class="widget_title">إنستغرام</h4>
-                   <ul class="instagram_row flex-wrap">
-                      <li>
-                         <a href="#">
-                            <img class="img-fluid" src="https://i.pinimg.com/736x/09/6f/8b/096f8b050095e82cc66af6fd813b5795.jpg" alt="">
-                         </a>
-                      </li>
-                      <li>
-                         <a href="#">
-                            <img class="img-fluid" src="https://i.pinimg.com/236x/58/86/a1/5886a1c9fca1b93683bd870b63bc7ae4.jpg" alt="">
-                         </a>
-                      </li>
-                      <li>
-                         <a href="#">
-                            <img class="img-fluid" src="https://i.pinimg.com/236x/5d/80/3a/5d803a6b5b248e9cc151bae8cb5db0d7.jpg" alt="">
-                         </a>
-                      </li>
-                      <li>
-                         <a href="#">
-                            <img class="img-fluid" src="https://i.pinimg.com/736x/20/07/1d/20071d90d5687608e3a12c1e028875a2.jpg" alt="">
-                         </a>
-                      </li>
-                      <li>
-                         <a href="#">
-                            <img class="img-fluid" src="https://i.pinimg.com/736x/20/07/1d/20071d90d5687608e3a12c1e028875a2.jpg" alt="">
-                         </a>
-                      </li>
-                      <li>
-                         <a href="#">
-                            <img class="img-fluid" src="https://i.pinimg.com/736x/09/6f/8b/096f8b050095e82cc66af6fd813b5795.jpg" alt="">
-                         </a>
-                      </li>
-                   </ul>
-                </aside>
-                <aside class="single_sidebar_widget newsletter_widget">
-                   <h4 class="widget_title">النشرة الإخبارية</h4>
-                   <form action="#">
-                      <div class="form-group">
-                         <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'أدخل بريدك الإلكتروني'" placeholder='أدخل بريدك الإلكتروني' required>
-                      </div>
-                      <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                         type="submit">اشتراك</button>
-                   </form>
-                </aside>
+                 </div>
+               </div>
              </div>
-          </div>
-       </div>
-    </div>
+             <!-- Author Section -->
+             <div class="blog-author">
+               <div class="media align-items-center">
+                 <img src="https://i.pinimg.com/736x/d9/8c/ac/d98cacb488d9246c5f8eba80221c2b42.jpg" alt="صورة الكاتب">
+                 <div class="media-body">
+                   <a href="#"><h4>هارفارد ميلان</h4></a>
+                   <p>كاتب متخصص في السياحة...</p>
+                 </div>
+               </div>
+             </div>
+             <!-- Comments Section -->
+             <div class="comments-area">
+               <h4>05 تعليقات</h4>
+               <div class="comment-list">
+                 <div class="single-comment justify-content-between d-flex">
+                   <div class="user">
+                     <div class="thumb">
+                       <img src="https://i.pinimg.com/736x/f6/ee/13/f6ee1311d121ea0cef159ff502d21720.jpg" alt="صورة المعلق">
+                     </div>
+                     <div class="desc">
+                       <p class="comment">مقال رائع!</p>
+                       <div class="d-flex justify-content-between">
+                         <div class="d-flex align-items-center">
+                           <h5><a href="#">إيميلي بلانت</a></h5>
+                           <p class="date">4 ديسمبر 2017 الساعة 3:12 مساءً</p>
+                         </div>
+                         <div class="reply-btn">
+                           <a href="#" class="btn-reply text-uppercase">رد</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+ 
+ 
+ 
+ 
+             
+             <!-- Comment Form -->
+             <div class="comment-form">
+               <h4>اترك تعليقًا</h4>
+               <form class="form-contact comment_form" action="#" id="commentForm">
+                 <div class="row">
+                   <div class="col-12">
+                     <div class="form-group">
+                       <textarea class="form-control w-100" name="comment" id="comment" placeholder="اكتب تعليقك"></textarea>
+                     </div>
+                   </div>
+                   <div class="col-sm-6">
+                     <div class="form-group">
+                       <input class="form-control" name="name" id="name" type="text" placeholder="الاسم">
+                     </div>
+                   </div>
+                   <div class="col-sm-6">
+                     <div class="form-group">
+                       <input class="form-control" name="email" id="email" type="email" placeholder="البريد الإلكتروني">
+                     </div>
+                   </div>
+                 </div>
+                 <div class="form-group">
+                   <button type="submit" class="button button-contactForm btn_1 boxed-btn">إرسال</button>
+                 </div>
+               </form>
+             </div>
+         
+         </div>
+     
+
+
+            </div>
+        
+          
+
  </section>
+
    <!--================ Blog Area end =================-->
-</main>
+
 
 <footer class="site-footer">
 	<div class="inner first">
