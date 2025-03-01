@@ -113,11 +113,6 @@ const places_1 = [
 function closeModal() {
     document.getElementById('login-modal').style.display = 'none';
 }
-
-
-
-
-
 // وظيفة لتسجيل الدخول
 function loginUser() {
     // هنا يمكنك إضافة الكود اللازم لتسجيل الدخول (مثل التحقق من بيانات المستخدم)

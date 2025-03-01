@@ -118,8 +118,10 @@
                     <div class="icon d-flex align-items-center justify-content-center">
                         <img src="/img/location.png" alt="Location" class="icon-img">
                     </div>
-                    <h3 class="mb-2">موقعنا</h3>
-                    <p>عمان، الأردن</p>
+                    <h3 class="mb-2" id="openModal">اقتراح مكان جديد</h3>
+<a href="#">
+    <p style="text-decoration: none;">دلنا على مكان جديد اكتشفتوا</p>
+</a>
                 </div>
             </div>
             <div class="col-md-3 d-flex">
@@ -172,14 +174,17 @@
                         <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="رسالتك"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="إرسال رسالة" class="btn btn-primary py-3 px-5">
+                        <input type="submit" value="إرسال " class="btn btn-primary py-3 px-5 " style="background-color: #115173;">
                     </div>
                 </form>
             </div>
             <div class="col-md-6 d-flex">
-                <div class="map-container" style="width: 100%; height: 300px; margin-top: 20px;">
-					<img src="../img/map.png" alt="" srcset="">
-                    <!-- <iframe 
+                <div class="map-container" style="width: 100%;background-color: ;">
+					<!-- <img src="https://i.pinimg.com/736x/94/ae/34/94ae34491ea4d52febbf2391289e9235.jpg" alt="" srcset=""> -->
+					<img src="https://i.pinimg.com/736x/b3/b4/fb/b3b4fba8fa2ebe4786538b5a2150df8a.jpg" alt="" srcset="" style="height: 500px;width: 80%;">
+
+					
+					<!-- <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.481291804037!2d36.081324!3d32.083611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c77b678f0d6fb%3A0x3a9f913c2f40b2c1!2sZarqa%2C%20Jordan!5e0!3m2!1sen!2sjo!4v1707200000000" 
                         width="100%" 
                         height="100%" 
@@ -195,65 +200,157 @@
 </section>
 
 
-
-<!-- فورم التجربة الجديده -->
-<section class="contact-form-section" style="direction: rtl;">
+<!-- <section class="contact-form-section">
     <div class="container">
-        <h2>مكان جديد</h2>
-        <p>يرجى ملء المعلومات التالية عن أماكن غير مشهورة وتتمنى الناس أن تعلم عنها.</p>
+        <h2>اقتراح مكان جديد</h2>
+        <p>شاركنا معلومات عن أماكن غير مشهورة تستحق الزيارة.</p>
         <form action="#" class="contact-form">
-            <div class="form-group" style="text-align: right;">
-                <label for="name">اسم المكان</label>
-                <input type="text" id="name" class="form-control" placeholder="الاسم" required>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="name">اسم المكان</label>
+                    <input type="text" id="name" placeholder="أدخل اسم المكان" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" placeholder="أدخل رقم هاتفك" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">المدينة</label>
+                    <select id="city" required>
+                        <option value="">اختر المدينة</option>
+                        <option value="zarqa">الزرقاء</option>
+                        <option value="amman">عمان</option>
+                        <option value="irbid">إربد</option>
+                        <option value="other">مدينة أخرى</option>
+                    </select>
+                </div>
+
+                <div class="form-group-full">
+                    <label>الفئة الرئيسية:</label>
+                    <div class="category-group">
+                        <label><input type="checkbox" name="category" value="تاريخ"> اثار </label>
+                        <label><input type="checkbox" name="category" value="زراعة"> اماكن للتصوير </label>
+                        <label><input type="checkbox" name="category" value="رياضة"> اندية رياضيه</label>
+                        <label><input type="checkbox" name="category" value="مغامرات"> مطاعم و مقاهي </label>
+                        <label><input type="checkbox" name="category" value="معالم طبيعية">  حدائق</label>
+                    </div>
+                </div>
+
+                <div class="form-group-full">
+                    <label for="description">وصف المكان</label>
+                    <textarea id="description" rows="4" placeholder="اكتب التفاصيل هنا"></textarea>
+                </div>
+
+                <div class="form-group-full">
+                    <label for="file-upload">أرفق صورة للموقع</label>
+                    <input type="file" id="file-upload" multiple required>
+                    <small style="display: block; color: #FFD700;">يمكنك تحميل ما يصل إلى 10 صور.</small>
+                </div>
+
+                <button type="submit" class="btn-submit">إرسال</button>
             </div>
-            <div class="form-group" style="text-align: right;">
-                <label for="email">البريد الإلكتروني</label>
-                <input type="email" id="email" class="form-control" placeholder="البريد الإلكتروني" required>
-            </div>
-            <div class="form-group">
-                <label for="phone" style="text-align: right;">رقم الهاتف</label>
-                <input type="tel" id="phone" class="form-control" placeholder="رقم الهاتف" required>
-            </div>
-            <div class="form-group" style="text-align: right;">
-                <label for="subject">الوصف</label>
-                <input type="text" id="subject" class="form-control" placeholder="الموضوع" required>
-            </div>
-            <div class="form-group" style="text-align: right;">
-                <label for="type" >المدينة</label>
-                <select id="type" class="form-control" required>
-                    <option value="">الزرقاء</option>
-                    <option value="document">عمان</option>
-                    <option value="image">اربد</option>
-                    <option value="video">مدينة أخرى</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>الفئة الرئيسية:</label><br>
-                <label><input type="checkbox" name="category" value="تاريخ"> تاريخ</label><br>
-                <label><input type="checkbox" name="category" value="زراعة"> زراعة</label><br>
-                <label><input type="checkbox" name="category" value="رياضة"> رياضة</label><br>
-                <label><input type="checkbox" name="category" value="مغامرات"> مغامرات</label><br>
-                <label><input type="checkbox" name="category" value="معالم طبيعية"> معالم طبيعية</label>
-            </div>
-            <div class="form-group" style="text-align: right;">
-                <label for="message">وصف المكان</label>
-                <textarea id="message" class="form-control" rows="5" placeholder="اكتب ملاحظاتك هنا"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="file-upload" style="text-align: right;">أرفق صورة للموقع</label>
-                <input type="file" id="file-upload" class="form-control-file" multiple required>
-                <small class="form-text text-muted"style="text-align: right;">يمكنك تحميل ما يصل إلى 10 ملفات.</small>
-            </div>
-            <button type="submit" class="btn-submit">إرسال</button>
         </form>
     </div>
-</section>
+</section> -->
 
-<!-- تأكد من إضافة مكتبات Bootstrap في ملف HTML -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Modal structure -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <section class="contact-form-section">
+            <div class="container">
+                <h2>اقتراح مكان جديد</h2>
+                <p>شاركنا معلومات عن أماكن غير مشهورة تستحق الزيارة.</p>
+                <form action="#" class="contact-form">
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="name">اسم المكان</label>
+                            <input type="text" id="name" placeholder="أدخل اسم المكان" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" placeholder="أدخل رقم هاتفك" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">المدينة</label>
+                            <select id="city" required>
+                                <option value="">اختر المدينة</option>
+                                <option value="zarqa">الزرقاء</option>
+                                <option value="amman">عمان</option>
+                                <option value="irbid">إربد</option>
+                                <option value="other">مدينة أخرى</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group-full">
+                            <label>الفئة الرئيسية:</label>
+                            <div class="category-group">
+                                <label><input type="checkbox" name="category" value="تاريخ"> اثار </label>
+                                <label><input type="checkbox" name="category" value="زراعة"> اماكن للتصوير </label>
+                                <label><input type="checkbox" name="category" value="رياضة"> اندية رياضيه</label>
+                                <label><input type="checkbox" name="category" value="مغامرات"> مطاعم و مقاهي </label>
+                                <label><input type="checkbox" name="category" value="معالم طبيعية">  حدائق</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group-full">
+                            <label for="description">وصف المكان</label>
+                            <textarea id="description" rows="4" placeholder="اكتب التفاصيل هنا"></textarea>
+                        </div>
+
+                        <div class="form-group-full">
+                            <label for="file-upload">أرفق صورة للموقع</label>
+                            <input type="file" id="file-upload" multiple required>
+                            <small style="display: block; color: #FFD700;">يمكنك تحميل ما يصل إلى 10 صور.</small>
+                        </div>
+
+                        <button type="submit" class="btn-submit">إرسال</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
            
@@ -268,7 +365,7 @@
 
 	<!--  ==============================================================================================  footer==========================================-->
 
-	<div class="site-footer">
+	<div class="site-footer" >
 		<div class="inner first">
 		  <div class="container">
 			<div class="row">
